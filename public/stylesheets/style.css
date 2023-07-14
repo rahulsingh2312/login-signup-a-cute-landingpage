@@ -1,0 +1,134 @@
+*{
+    margin: 0%;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+.top{
+    position: absolute;
+width: 65%;
+height: 50%;
+top:0;
+background-color:#FF78C4;
+transition: top 0.5s ease;
+}
+.bottom{
+    position: absolute;
+    top:50%;
+    left: 35%;
+    width: 65%;
+    height: 50%;
+    background-color:#E1AEFF;
+    transition: top 2s ease, width 2.5s ease, left 3.5s ease;
+}
+.left{
+    position: absolute;
+    top:50%;
+    width: 35%;
+    background-color: #ffcece;
+    height: 78%;
+    z-index: -1;
+    transition: top 1.5s ease,width 1.5s ease;
+}
+.center{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 2s ease;
+}
+.right{
+    position: absolute;
+    width: 35%;
+    left: 65%;
+    top:0;
+    height: 50%;
+    background-color: #fdaff4;
+    transition: height 4s ease, left 2s ease;
+}
+
+.container:hover .top{
+    top:-27%;
+}
+.container:hover .left{
+    top:23%;
+}
+.container:hover .bottom{
+    top:80%;
+}
+.container:hover .right{
+    height: 80%;
+}
+.container:hover .center{
+    opacity: 1;
+}
+.center input{
+    padding: 15px;
+    margin-bottom: 5px;
+}
+#submit{
+    width: 195px;
+    background-color: rgb(141, 141, 255);
+}
+#link a[href]{
+    color:#2506c2;
+    text-decoration: none;
+}
+#title{
+    position: absolute;
+    top:30%;
+    left: 44%;
+    opacity: 0;
+    transition: opacity 2.5s ease;
+}
+#formtitle{
+    position: absolute;
+    top:40%;
+    left:47%;
+    transition: opacity 2s ease;
+    opacity: 0;
+}
+.container:hover #title{
+    opacity: 1;
+}
+.container:hover #formtitle{
+    opacity: 1;
+}
+
+
+@media (max-width: 600px) {
+    .container:hover .left{
+        top:23%;
+        width: 15%;
+    }
+    .center{
+        left: 27%;
+    }
+    .container:hover .right{
+        left: 86%;
+        
+    }
+    .container:hover .top{
+        width: 86%;
+        
+    }
+    .container:hover .bottom{
+        width: 86%;
+        left: 15%;
+        
+    }
+    #title{
+        left: 20%;
+         z-index: 3;
+    }
+    #formtitle{
+        left: 36%;
+        top:38%;
+    }
+  }
+  
