@@ -11,16 +11,18 @@ exports.Signup = Signup;
 exports.Signupuser = async function Signupuser(req,res){
   // res.send("hi");
   let email = req.body.email1;
-  let USER1 = await(User.find({email:email}));
-  if(USER1){
-    console.log("uswer wxists");
-    res.render('index',{error:"user exists"});
-  }else{
+  let USER1 = await(User.findOne({email:email}));
+  console.log(USER1);
+  if(!USER1){
     User.create({
       email:req.body.email1,
       password:req.body.pass1
      })
-     res.send("success");
+     res.send(`you signed up with ${email} `);
+  }else{
+    console.log("uswer wxists");
+    res.render('index',{error:"user exists" ,title:"signup" });
+   
   }
    
  };

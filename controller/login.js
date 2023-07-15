@@ -19,7 +19,7 @@ console.log(USER1.password)
         res.send("hi login " + email);
    }
    else{
-    res.send("hyyyu");
+    res.send("your internet is not working (cannot connect to mongodb)");
    }
    
     // res.send("hi login");

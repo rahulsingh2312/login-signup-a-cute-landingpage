@@ -8,6 +8,7 @@
     <title>{{title}}</title>
     <style>
         *{
+            font-family: 'Press Start 2P';
             ::selection{
                 color: aliceblue;
                 background-color: red;
@@ -16,6 +17,8 @@
         body{
             background-color: rgb(22, 0, 0);
             color: aliceblue;
+            
+            /* margin: 0%; */
         }
         /* #text1{
             position: absolute;
@@ -67,31 +70,32 @@ top:45%;
     display: inline-block;
     color: white;
     margin: 0%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0%;
     list-style: none;
 }
+
 .login{
     background-color: aliceblue;
     color: rgb(0, 0, 18);
     padding-top: 10px;
-    padding-left: 3px;
+    padding-left: 2px;
     padding-bottom: 10px;
     border: solid blue;
 }
 
-.li:hover{
+.li:hover , #moblogsign:hover , #moblogsign2:hover , #mobdemo:hover{
     
 
 cursor: pointer;
     opacity: 0.5;
-    transform: translateY(10px);
+    transform: translateY(8px);
     box-shadow: 10px 10px 5px white;
 }
-.li:active{
+.li:active ,#moblogsign:active , #moblogsign2:active , #mobdemo:active{
    
 
-    transform: translateY(30px);
+    transform: translateY(8px);
     box-shadow: 10px 10px 5px white;
 }
 #imgcodeboy{
@@ -113,17 +117,228 @@ cursor: pointer;
     left: 5%;
 
 } */
-    </style>
+
+    .hamchange2{
+        opacity: 0;
+    }
+    .hamchange{
+        transform: rotate(55deg);
+    }
+    .hamchange3{
+        transform: rotate(-55deg);
+    }
+.slidechange{
+    line-height:normal;
+        opacity: 1;
+        /* z-index: 10; */
+        width:auto;
+position: absolute;
+top:5px;
+left: 0;
+height: 90%;
+width: 100px;
+background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.above{
+    opacity: 1;
+}
+   
+    #mobilenavbar{
+        line-height: 0;
+        opacity: 0;
+        width: 0;
+    }
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+@media (max-width:700px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    #boydesign{
+    position: absolute;
+ top:10%;
+ left: 4%;
+    opacity: 0.8;
+}
+#imgcodeboy{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    /* border-style:dashed;
+    border-color: aliceblue;  */
+}
+#laptop{
+    opacity: 0;
+    pointer-events: none;
+}
+#mobilenavbar{
+        line-height:normal;
+        opacity: 1;
+        width:auto;
+    }
+    li{
+    font-family: 'Press Start 2P';font-size: 22px;
+    /* display: inline-block; */
+    color: rgb(255, 0, 0);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 30px;
+    /* padding: 50px; */
+    opacity: 0;
+    left: 0;
+  
+    font-size: 0.5rem;
+    /* padding:10px; */
+    list-style: none;
+}
+.litext:hover{
+    
+
+    cursor: pointer;
+        opacity: 0.5;
+        transform: translateY(5px);
+        box-shadow: 10px 10px 5px white;
+    }
+    .litext:active{
+       
+    
+        transform: translateY(5px);
+        box-shadow: 10px 10px 5px white;
+    }
+#ham{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    z-index: 105;
+    background-color: rgb(255, 0, 0);
+    margin-top: 5px;
+    /* color: aliceblue; */
+}
+#ham2{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    z-index: 105;
+    background-color: rgb(255, 0, 0);
+    margin-top: 10px;
+}
+#ham3{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    z-index: 105;
+    background-color: rgb(255, 0, 0);
+    margin-top: 15px;
+}
+.litext{
+    opacity: 0;
+}
+#slide{
+    opacity: 1;
+    z-index: 100;
+    /* line-height: 0; */
+    
+    }
+#marqueemob{
+    color: aliceblue;
+    font-size: 5rem;
+    opacity: 0.5;
+    position: absolute;
+    top:150px;
+    font-family: 'Press Start 2P';
+    /* z-index: 1; */
+}
+#H1{
+    position: absolute;
+    top:7%;
+    left: 6%;
+    font-size: 10px;
+    font-family: 'Press Start 2P';
+}
+
+.hili{
+    color: aliceblue;
+    font-size: 10px;
+    font-family: 'Press Start 2P';
+position: absolute;
+background-color: aqua;
+text-decoration: none;
+top: 30px;
+}
+#moblogsign{
+    position: absolute;
+    top:13%;
+    left: 30%;
+    background-color: aliceblue;
+    color: rgb(0, 0, 18);
+    padding-top: 1px;
+    padding-left: 5px;
+    padding-right: 13px;
+    padding-bottom: 1px;
+    margin-top: 25px;
+    border: solid blue;
+    font-size:0.75rem;
+}
+#mobdemo{
+    position: absolute;
+    /* top:13%; */
+    /* left: 0%; */
+    background-color: aliceblue;
+    color: rgb(0, 0, 18);
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 0px;
+    padding-bottom: 1px;
+    /* margin-top: 25px; */
+    border: solid rgb(255, 0, 0);
+    font-size:0.75rem;
+}
+#moblogsign2{
+    position: absolute;
+    top:13%;
+    left: 30%;
+    font-size: 0.75rem;
+    background-color: aliceblue;
+    color: rgb(0, 0, 18);
+    padding-top: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 1px;
+    /* margin-top: 10px; */
+    border: solid blue;
+}
+
+#sale{
+    position: absolute;
+    top:29%;
+    font-size: 0.5rem;
+    left: 25px;
+}
+#sale p{
+    display: inline;
+  /* font-size: 40px; */
+  margin-top: 0px;
+}
+}
+ 
+
+   </style>
 </head>
 <body>
-<nav>
+    
+    <span id="hamburger" onclick="makeax()" ><span id="ham"></span><span id="ham2"></span><span id="ham3"></span>
+</span>
+    
+    <span id="laptop">
+<nav class="opacity">
     <div>
 <ul id="navbar">
     <li style="margin-right: 30px;"> <img src="images/privacy.png" width="50px" height="50px"> </li>
-    <li class="li" style="margin: 20px;" ><a>home</a></li>
-    <li class="li"  style="margin: 20px;"><A>about</A></li>
-    <li class="li"  style="margin: 20px;"><a>Services</a></li>
-    <li class="li"  style="margin: 20px;"><a>Contact</a></li>
+    <li class="li" style="margin: 1.5%;" ><a>home</a></li>
+    <li class="li"  style="margin: 1.5%;"><A>about</A></li>
+    <li class="li"  style="margin: 1.5%;"><a>Services</a></li>
+    <li class="li"  style="margin: 1.5%;"><a>Contact</a></li>
     <li class="li"  style="margin-left: 18rem;"><a class="login" href="/login">login</a></li>
     <li class="li"  style="margin-left: auto"><a class="login" href="/signup">Signup</a></li>
 </ul>
@@ -142,7 +357,100 @@ cursor: pointer;
     <a href="https://www.instagram.com/rrahulol/" target="_blank"><img alt="Instagram" width="35px" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"></a> &nbsp&nbsp&nbsp
     <a href="mailto:rahulsinghhh2312@gmail.com" target="_blank"><img alt="Gmail" width="35px" src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png"></a>&nbsp&nbsp&nbsp
 </div> -->
-    <img id="boydesign" src="images/hi.png" width="30%">
-    <img id="imgcodeboy" src="https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif" width="20%">
+   </span>
+   <img id="boydesign" src="images/hi.png" width="30%">
+   
+ 
+ 
+ 
+ 
+   <img id="imgcodeboy" src="https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif" width="20%">
+ 
+ 
+   <span id="mobilenavbar">
+
+<span id="slide">
+<ul id="below">
+    <br>
+    <li class="litext"><a onclick="makeax()" href="#home">home</a></li><br><br>
+    <li class="litext">about</li><br><br>
+    <li class="litext">services</li><br><br>
+    <li class="litext">contact</li>
+</ul>
+</span>
+<SPAN ID="H1">BLACKHAT JUNIOR </SPAN>
+<!-- <marquee id="marqueemob">BLACK HAT JR 🎓</marquee> -->
+<span >
+<a id="moblogsign"  href="/login">login</a>
+<br>
+<br>
+<a  id="moblogsign2" href="/signup">Signup</a>
+</span>
+<span id="sale"> WHITE FRIYAAY SALE 🔥🔥
+     <br> ENDS IN :<br><br>
+     🔥&nbsp;<p id="days"></p>
+    <p id="hours"></p>
+    <p id="mins"></p>
+    <p id="secs"></p>🔥
+    <h2 id="end"></h2>
+    
+  <span ID="mobdemo">  BOOK A FREE DEMO LEC TODAY</span>
+</span>
+<!-- <img src="https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif" width="20%"> -->
+<!-- <img  src="images/hi.png" width="30%"> -->
+</span>
+
+<script>
+    slidejs = document.getElementById("slide");
+    hi = document.getElementById("ham");
+    hi2 = document.getElementById("ham3");
+    hi3 = document.getElementById("ham2");
+    var buttons = document.getElementsByClassName('litext');
+    	
+       
+    function makeax(){
+        hi.classList.toggle("hamchange");
+        hi3.classList.toggle("hamchange3");
+        hi2.classList.toggle("hamchange2");
+        slidejs.classList.toggle("slidechange");
+        for (var i =0;i < buttons.length; i++){
+            buttons[i].style.opacity =  ( buttons[i].style.opacity ==  "1" ? "0" : "1");
+    	
+     
+    }
+     }
+
+    // The data/time we want to countdown to
+    var countDownDate = new Date("Jul 25, 2024 16:37:52").getTime();
+
+    // Run myfunc every second
+    var myfunc = setInterval(function() {
+
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+        
+    // Calculating the days, hours, minutes and seconds left
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+        
+    // Result is output to the specific element
+    document.getElementById("days").innerHTML = days + "d "
+    document.getElementById("hours").innerHTML = hours + "h " 
+    document.getElementById("mins").innerHTML = minutes + "m " 
+    document.getElementById("secs").innerHTML = seconds + "s " 
+        
+    // Display the message when countdown is over
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = "" 
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "TIME UP!!";
+    }
+    }, 1000);     
+</script>
 </body>
 </html>
