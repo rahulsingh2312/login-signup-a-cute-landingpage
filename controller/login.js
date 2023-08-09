@@ -18,8 +18,11 @@ console.log(USER1.password)
    if(USER1[0].password===password){
         res.send("hi login " + email);
    }
+   else if(USER1[0].password != password){
+    res.send("wrong password or email ");
+   }
    else{
-    res.send("your internet is not working (cannot connect to mongodb)");
+    res.send("your internet is not working (cannot connect to mongodb) ");
    }
    
     // res.send("hi login");
