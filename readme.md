@@ -1,3 +1,11 @@
+## Quick Start with Express.js
+
+1. **Clone:** `git clone https://github.com/your-username/your-repo.git`
+2. **Navigate:** `cd your-repo`
+3. **Install:** `npm install`
+4. **Start:** `node app.js`
+5. **Access:** [http://localhost:3000](http://localhost:3000)
+#### Please replace "your-username" and "your-repo" with your actual GitHub username and repository name. You can copy and paste this directly into your GitHub README.
 
 ### A EXPRESS JS , MONGODB AND HBS WEBApp
 
